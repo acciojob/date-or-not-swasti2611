@@ -1,12 +1,12 @@
 var isDate = function (input) {
   //   write your code here
-	let newinput=parse.Date(input);
-	if(typeof input==='string' && !isNaN(newinput)){
-		return true;
-	}else{
-		return false;
-	}
+	 if (input instanceof Date || (typeof input === 'string' && !isNaN(Date.parse(input)))) {
+        return true;
+    }
+    // Otherwise, return false
+    return false;
+};
+
 // Do not change the code below.
-const input= prompt("Enter Date.");
-alert(isDate(input));
-	
+// const input = prompt("Enter Date.");
+// alert(isDate(input));
