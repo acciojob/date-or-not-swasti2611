@@ -1,7 +1,7 @@
 var isDate = function (input) {
   //   write your code here
-	let newinput=parse.Date();
-	if(typeof newinput===Date){
+	let newinput=parse.Date(input);
+	if(typeof newinput===object){
 		return true;
 	}else{
 		return false;
